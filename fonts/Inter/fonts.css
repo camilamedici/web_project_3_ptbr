@@ -1,0 +1,12 @@
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter/IstokWeb-Regular.ttf) format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(../fonts/Inter/IstokWeb-Bold.ttf) format('truetype');
+  font-weight: bold;
+}
