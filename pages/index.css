@@ -187,9 +187,8 @@ body{
   padding-bottom: 48px;
 }
 
-.card__button{
+.button{
   background-color: #0278FE;
-  color: white;
   padding: 13px 20px;
   border-radius: 4px;
   gap: 10px;
@@ -201,6 +200,11 @@ body{
   width: 355px;
   height: 48px;
   cursor: pointer;
+}
+
+.button__link{
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .card__artist{
@@ -273,4 +277,60 @@ body{
 
 /*-----------------------------*/
 
+.ticket{
+  display: flex;
+  justify-content: center;
+
+}
+
+.ticket__pic{
+  width: 1184px;
+  height: 740px;
+}
+
+.ticket__description{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.ticket__title{
+  padding-top: 243px;
+  width: 656px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  text-align: center;
+  color: #FFFDFD;
+
+  margin: 0;
+  z-index: 3;
+  border: 1px solid red;
+
+}
+
+.ticket__subtitle{
+  margin: 0;
+  padding: 32px 0;
+  width: 280px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  z-index: 4;
+  border: 1px solid red;
+
+}
+
+.button-ticket{
+  margin: 0;
+  width: 191px;
+  height: 48px;
+  z-index: 5;
+
+}
 /*-----------------------------*/
