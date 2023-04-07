@@ -121,7 +121,7 @@ body{
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 26px;
+  line-height: 1.625rem;
   border: 1px solid red;
 }
 
@@ -142,10 +142,6 @@ body{
 
 
 /*-----------------------------*/
-
-.city{
-
-}
 
 .city__cards{
   padding: 92px 0;
@@ -174,8 +170,8 @@ body{
   width: 460px;
   font-style: normal;
   font-weight: 900;
-  font-size: 72px;
-  line-height: 76px;
+  font-size: 4.5rem;
+  line-height: 4.75rem;
   margin: 0;
   padding-bottom: 48px;
   border: 1px solid red;
@@ -194,8 +190,8 @@ body{
   gap: 10px;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   border: none;
   width: 355px;
   height: 48px;
@@ -212,8 +208,8 @@ body{
   padding-bottom: 8px;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
   letter-spacing: 0.12em;
   margin: 0;
   color: #AAAAAA;
@@ -223,10 +219,10 @@ body{
 
 .card__author{
   padding-bottom: 48px;
-  line-height: 22px;
+  line-height: 1.375rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin: 0;
   border: 1px solid red;
 
@@ -238,8 +234,8 @@ body{
   margin: 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 29px;
+  font-size: 1.125rem;
+  line-height: 1.8125rem;
   border: 1px solid red;
   padding-bottom: 25px;
 }
@@ -301,15 +297,12 @@ body{
   width: 656px;
   font-style: normal;
   font-weight: 900;
-  font-size: 72px;
-  line-height: 76px;
+  font-size: 4.5rem;
+  line-height: 4.75rem;
   text-align: center;
   color: #FFFDFD;
-
   margin: 0;
-  z-index: 3;
   border: 1px solid red;
-
 }
 
 .ticket__subtitle{
@@ -318,19 +311,30 @@ body{
   width: 280px;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   text-align: center;
-  z-index: 4;
   border: 1px solid red;
-
 }
 
 .button-ticket{
   margin: 0;
   width: 191px;
   height: 48px;
-  z-index: 5;
-
 }
 /*-----------------------------*/
+.footer{
+  padding: 92px 0 24px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+.footer__text{
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  text-align: center;
+}
