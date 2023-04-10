@@ -1,17 +1,17 @@
-@import url(../fonts/Inter/fonts.css);
+@import url(../vendor/fonts.css);
 /*@import url(../blocks/page/page.css);*/
 
 body{
   background-color: #E5E5E5;;
 }
 
-.page {
+.page{
   max-width: 1280px;
-  /*max-width: 1600px;*/
   margin: 0 auto;
   font-family: 'Inter', Arial, sans-serif;
   background-color: #2A2C2F;
   color: white;
+
 }
 
 /*-----------------------------*/
@@ -64,16 +64,16 @@ body{
 .header__image{
   width: 984px;
   height: 615px;
-
-
 }
+
+
+
 /*-----------------------------*/
 .description{
-
   border: 1px solid red;
   display: flex;
   flex-direction: column;
-
+  padding: 92px 0;
 }
 
 .two-columns{
@@ -82,13 +82,13 @@ body{
 }
 
 .two-columns__title{
+  width: 1017px;
   font-style: normal;
   font-weight: 900;
   font-size: 3.375rem;
   line-height: 3.625rem;
   border: 1px solid red;
   width: 1017px;
-  padding-top: 92px;
   margin: 0;
 }
 
@@ -117,7 +117,6 @@ body{
   margin: 0;
   width: 720px;
   padding-top: 32px;
-  padding-bottom: 92px;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -143,11 +142,10 @@ body{
 
 /*-----------------------------*/
 
-.city__cards{
+.city{
   padding: 92px 0;
   display: flex;
   row-gap: 80px;
-  border: 1px solid red;
   align-items: center;
   flex-direction: column;
 }
@@ -155,16 +153,13 @@ body{
 .card{
   width: 984px;
   height: 756px;
-  display: grid;
-  grid-template-columns: 50% 50%;
   border: 1px solid red;
-}
-
-.card__description{
   display: flex;
   flex-direction: column;
-
+  flex-wrap: wrap;
+  align-content: space-between;
 }
+
 
 .card__title{
   width: 460px;
@@ -174,7 +169,7 @@ body{
   line-height: 4.75rem;
   margin: 0;
   padding-bottom: 48px;
-  border: 1px solid red;
+
 }
 
 .card__pic{
@@ -195,7 +190,13 @@ body{
   border: none;
   width: 355px;
   height: 48px;
+
+}
+
+.button:hover{
   cursor: pointer;
+  background-color: #0063D2;
+
 }
 
 .button__link{
@@ -204,6 +205,7 @@ body{
 }
 
 .card__artist{
+  width: 484px;
   padding-top: 107px;
   padding-bottom: 8px;
   font-style: normal;
@@ -213,30 +215,32 @@ body{
   letter-spacing: 0.12em;
   margin: 0;
   color: #AAAAAA;
-  border: 1px solid red;
+  border: 0.001px solid red;
   text-transform: uppercase;
 }
 
 .card__author{
+  width: 484px;
   padding-bottom: 48px;
   line-height: 1.375rem;
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
   margin: 0;
-  border: 1px solid red;
+  border: 0.001px solid red;
 
 }
 
 
 
 .card__paragraph{
+  width: 484px;
   margin: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.8125rem;
-  border: 1px solid red;
+  border: 0.001px solid red;
   padding-bottom: 25px;
 }
 
@@ -245,7 +249,7 @@ body{
 /*-----------------------------*/
 
 .card__title-gales{
-  width: 100%;
+  width: 484px;
 }
 
 .card__artist-gales{
@@ -260,14 +264,20 @@ body{
 
 
 /*-----------------------------*/
+.card-eua{
+  height: 680px;
+}
 .card__artist-eua{
   padding-top: 31px;
 }
 
 /*-----------------------------*/
-
 .card-burundi{
-  height: 100%;
+  height: 840px;
+}
+
+.card__paragraph-last{
+  padding: 0;
 }
 
 
@@ -284,12 +294,18 @@ body{
   height: 740px;
 }
 
+.ticket__pic:hover{
+  background: #2A2C2F;
+  opacity: 0.8;
+
+}
+
 .ticket__description{
   position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  z-index: 3;
 }
 
 .ticket__title{
@@ -337,4 +353,266 @@ body{
   font-size: 0.875rem;
   line-height: 1rem;
   text-align: center;
+}
+
+/*-----------------------------*/
+@media screen and (max-width: 768px){
+  .page{
+    max-width: 768px;
+  }
+
+  .header__title{
+    width: 720px;
+  }
+
+  .header__image{
+    width: 768px;
+    height: 480px;
+  }
+/*-----------------------------*/
+
+  .description{
+    padding: 88px 0 64px;
+  }
+
+  .two-columns{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .two-columns__title{
+    width: 720px;
+  }
+
+
+  /*-----------------------------*/
+  .city{
+    row-gap: 72px;
+    padding: 88px 0 92px;
+  }
+
+  .card{
+    width: 733px;
+    height: 100%;
+  }
+
+  .card__title{
+    width: 340px;
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .card__pic{
+    width: 340px;
+    height: 340px;
+  }
+
+  .card__artist{
+    padding-top: 0;
+  }
+/*-----------------------------*/
+  .card-gales{
+    margin-top: -41px;
+  }
+
+  .card__title-gales{
+    padding: 21px 0 0;
+  }
+
+  /*-----------------------------*/
+
+  .card-eua{
+    margin-top: -26px;
+  }
+/*-----------------------------*/
+  .card__artist-burundi{
+    padding-top: 47px;
+  }
+
+  /*-----------------------------*/
+  .ticket__pic{
+    width: 768px;
+    height: 746px;
+  }
+
+  .footer{
+  padding: 88px 0 24px;
+
+  }
+}
+
+@media screen and (max-width: 320px){
+  .logo{
+    width: 200px;
+    height: 51.85px;
+    margin-top: 20px;
+  }
+
+  .header__title{
+    width: 288px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    padding-top: 50.15px;
+  }
+
+  .header__subtitle{
+    width: 288px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 16px;
+    padding-bottom: 40px;
+  }
+
+  .header__image{
+    width: 320px;
+    height: 200px;
+  }
+
+  /*-----------------------------*/
+  .description{
+    padding: 44px 0 38px;
+  }
+
+  .two-columns__title{
+    width: 288px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .two-columns__subtitle{
+    width: 288px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 9px;
+  }
+
+  .two-columns__subtitle-author{
+    padding-top: 10px;
+  }
+
+  .two-columns__paragraph{
+    width: 288px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 18px;
+  }
+
+  /*-----------------------------*/
+  .table{
+    gap: 12px;
+  }
+  /*-----------------------------*/
+
+  .city{
+    padding: 62px 0 64px;
+    row-gap: 50px;
+    display: flex;
+
+  }
+
+  .card{
+    width: 320px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card__description{
+
+
+  }
+
+
+  .card__title{
+    width: 288px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 35px;
+    order: 1;
+  }
+
+  .card__artist{
+    width: 288px;
+    order: 2;
+  }
+
+  .card__author{
+    width: 288px;
+    order: 3;
+  }
+
+  .card__pic{
+    width: 320px;
+    height: 320px;
+    order: 4;
+  }
+
+  .card__paragraph{
+    width: 288px;
+    order: 5;
+  }
+
+  .button{
+    width: 288px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 16px 22px 15px 21px;
+    order: 6;
+  }
+
+
+
+  /*-----------------------------*/
+  .card-gales{
+    margin-top: -13px;
+  }
+  /*-----------------------------*/
+  .ticket__pic{
+    width: 320px;
+    height: 254px;
+  }
+
+  .ticket__title{
+    padding-top: 46px;
+    width: 288px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .ticket__subtitle{
+    padding: 16px 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+
+  .footer{
+    padding: 64px 0 24px;
+  }
+
+  .footer__text{
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
