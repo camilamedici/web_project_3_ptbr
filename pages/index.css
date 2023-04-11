@@ -525,16 +525,9 @@ body{
 
   .card{
     width: 320px;
-    height: 100%;
-
     display: flex;
     align-items: center;
     flex-direction: column;
-  }
-
-  .card__description{
-
-
   }
 
 
@@ -545,27 +538,36 @@ body{
     font-size: 32px;
     line-height: 35px;
     order: 1;
+    padding-bottom: 30px;
   }
 
   .card__artist{
     width: 288px;
     order: 2;
+    padding-top: 0;
+
   }
 
   .card__author{
     width: 288px;
     order: 3;
+    padding-bottom: 0;
   }
 
   .card__pic{
     width: 320px;
     height: 320px;
+    padding: 30px 0;
     order: 4;
   }
 
   .card__paragraph{
     width: 288px;
     order: 5;
+    padding-bottom: 7px;
+  }
+  .card__paragraph-last{
+    padding-bottom: 22px;
   }
 
   .button{
@@ -584,6 +586,19 @@ body{
   /*-----------------------------*/
   .card-gales{
     margin-top: -13px;
+  }
+  .card__title-gales{
+    padding: 0;
+  }
+  .card__artist-gales{
+    padding: 8px 0;
+  }
+/*-----------------------------*/
+  .card__pic-burundi{
+    padding-top: 8px;
+  }
+  .card__paragraph-burundi{
+    padding-bottom: 25px;
   }
   /*-----------------------------*/
   .ticket__pic{
