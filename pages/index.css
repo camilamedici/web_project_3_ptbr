@@ -2,11 +2,11 @@
 /*@import url(../blocks/page/page.css);*/
 
 body{
-  background-color: #2A2C2F;
+  background-color:#2A2C2F;
 }
 
 .page{
-  max-width: 1280px;
+  width: 1280px;
   margin: 0 auto;
   font-family: 'Inter', Arial, sans-serif;
   background-color: #2A2C2F;
@@ -355,6 +355,10 @@ body{
 
 /*-----------------------------*/
 @media screen and (max-width: 768px){
+
+  .page{
+    width: 768px;
+  }
   .header{
     width: 768px;
   }
@@ -503,6 +507,10 @@ body{
 }
 
 @media screen and (max-width: 320px){
+
+  .page{
+    width: 320px;
+  }
 
   .header{
     width: 320px;
