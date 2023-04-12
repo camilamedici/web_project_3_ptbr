@@ -17,6 +17,7 @@ body{
 /*-----------------------------*/
 
 .header{
+  width: 1280px;
   border: 1px solid red;
   display: flex;
   flex-direction: column;
@@ -28,7 +29,7 @@ body{
 .logo{
   width: 270px;
   height: 70px;
-  margin-top: 34px;
+  margin: 34px auto 0;
   border: 1px solid red;
 }
 
@@ -39,7 +40,8 @@ body{
   padding-top: 90px;
   border: 1px solid red;
   text-align: center;
-  margin: 0;
+  display: flex;
+  margin: 0 auto;
   font-style: normal;
   font-weight: 900;
   font-size: 6rem;
@@ -64,12 +66,14 @@ body{
 .header__image{
   width: 984px;
   height: 615px;
+  margin: 0 auto;
 }
 
 
 
 /*-----------------------------*/
 .description{
+  width: 1280px;
   border: 1px solid red;
   display: flex;
   flex-direction: column;
@@ -127,6 +131,7 @@ body{
 /*-----------------------------*/
 
 .table{
+  width: 1280px;
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -143,21 +148,23 @@ body{
 /*-----------------------------*/
 
 .city{
+  width: 1280px;
   padding: 92px 0;
   display: flex;
   row-gap: 80px;
   align-items: center;
   flex-direction: column;
+
 }
 
 .card{
   width: 984px;
   height: 756px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-between;
+  border: 1px solid red;
 }
 
 
@@ -215,7 +222,6 @@ body{
   letter-spacing: 0.12em;
   margin: 0;
   color: #AAAAAA;
-  border: 0.001px solid red;
   text-transform: uppercase;
 }
 
@@ -227,7 +233,7 @@ body{
   font-weight: 400;
   font-size: 1.125rem;
   margin: 0;
-  border: 0.001px solid red;
+
 
 }
 
@@ -240,11 +246,13 @@ body{
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.8125rem;
-  border: 0.001px solid red;
+
   padding-bottom: 25px;
 }
 
-
+.card__paragraph-last{
+  padding: 0;
+}
 
 /*-----------------------------*/
 
@@ -273,17 +281,16 @@ body{
 
 /*-----------------------------*/
 .card-burundi{
-  height: 840px;
+  height: 830px;
 }
 
-.card__paragraph-last{
-  padding: 0;
-}
+
 
 
 /*-----------------------------*/
 
 .ticket{
+  width: 1280px;
   display: flex;
   justify-content: center;
 
@@ -292,15 +299,17 @@ body{
 .ticket__pic{
   width: 1184px;
   height: 740px;
+  margin: 0 auto;
 }
 
 .ticket__pic:hover{
   background: #2A2C2F;
-  opacity: 0.8;
+  opacity: 0.7;
 
 }
 
 .ticket__description{
+  width: 1280px;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -340,6 +349,7 @@ body{
 }
 /*-----------------------------*/
 .footer{
+  width: 1280px;
   padding: 92px 0 24px;
   display: flex;
   justify-content: center;
@@ -347,6 +357,7 @@ body{
 }
 
 .footer__text{
+  width: 1280px;
   margin: 0;
   font-style: normal;
   font-weight: 400;
@@ -357,8 +368,8 @@ body{
 
 /*-----------------------------*/
 @media screen and (max-width: 768px){
-  .page{
-    max-width: 768px;
+  .header{
+    width: 768px;
   }
 
   .header__title{
@@ -366,12 +377,13 @@ body{
   }
 
   .header__image{
-    width: 768px;
+    width: 100%;
     height: 480px;
   }
 /*-----------------------------*/
 
   .description{
+    width: 768px;
     padding: 88px 0 64px;
   }
 
@@ -387,16 +399,22 @@ body{
     width: 720px;
   }
 
-
+/*-----------------------------*/
+  .table{
+    width: 768px;
+  }
   /*-----------------------------*/
   .city{
+    width: 768px;
     row-gap: 72px;
     padding: 88px 0 92px;
   }
 
   .card{
-    width: 733px;
-    height: 100%;
+    width: 720px;
+    height: 600px;
+    column-gap: 13px;
+
   }
 
   .card__title{
@@ -411,40 +429,96 @@ body{
   }
 
   .card__artist{
+    width: 352px;
     padding-top: 0;
+  }
+
+  .card__author{
+    width: 365px;
+    padding-bottom: 46px;
+  }
+
+  .card__paragraph{
+    width: 352px;
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 14px;
+  }
+
+  .button{
+    margin-bottom: 70px;
+  }
+
+  .card__paragraph-last{
+    padding: 0;
   }
 /*-----------------------------*/
   .card-gales{
     margin-top: -41px;
+    height: 632px;
   }
 
   .card__title-gales{
     padding: 21px 0 0;
   }
 
+  .card__artist-gales{
+    padding-top: 0px;
+  }
+  .card__author-gales{
+    padding-bottom: 0;
+  }
+
   /*-----------------------------*/
 
   .card-eua{
     margin-top: -26px;
+    height: 587px;
+  }
+
+  .button-eua{
+    margin-bottom: 40px;
   }
 /*-----------------------------*/
+  .card-burundi{
+    height: 818px;
+  }
   .card__artist-burundi{
     padding-top: 47px;
   }
 
+  .button-burundi{
+    margin-bottom: 180px;
+  }
+
   /*-----------------------------*/
-  .ticket__pic{
+
+  .button-brazil{
+    margin-bottom: 5px;
+  }
+
+  /*-----------------------------*/
+  .ticket{
     width: 768px;
+  }
+  .ticket__description{
+    width: 768px;
+  }
+  .ticket__pic{
+    width: 100%;
     height: 746px;
   }
 
   .footer{
-  padding: 88px 0 24px;
-
+    padding: 88px 0 24px;
+    width: 768px;
   }
 }
 
 @media screen and (max-width: 320px){
+  .header{
+    width: 320px;
+  }
   .logo{
     width: 200px;
     height: 51.85px;
@@ -477,8 +551,11 @@ body{
 
   /*-----------------------------*/
   .description{
+    width: 320px;
     padding: 44px 0 38px;
   }
+
+
 
   .two-columns__title{
     width: 288px;
@@ -512,11 +589,13 @@ body{
 
   /*-----------------------------*/
   .table{
+    width: 320px;
     gap: 12px;
   }
   /*-----------------------------*/
 
   .city{
+    width: 320px;
     padding: 62px 0 64px;
     row-gap: 50px;
     display: flex;
@@ -532,6 +611,7 @@ body{
 
 
   .card__title{
+    border: 1px solid red;
     width: 288px;
     font-style: normal;
     font-weight: 900;
@@ -601,6 +681,12 @@ body{
     padding-bottom: 25px;
   }
   /*-----------------------------*/
+  .ticket{
+    width: 320px;
+  }
+  .ticket__description{
+    width: 320px;
+  }
   .ticket__pic{
     width: 320px;
     height: 254px;
@@ -623,6 +709,7 @@ body{
 
 
   .footer{
+    width: 320px;
     padding: 64px 0 24px;
   }
 
