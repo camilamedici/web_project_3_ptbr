@@ -1,0 +1,15 @@
+.card-burundi{
+  height: 830px;
+}
+
+@media screen and (max-width: 768px){
+  .card-burundi{
+    height: 818px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .card-burundi{
+    height: 100%;
+  }
+}

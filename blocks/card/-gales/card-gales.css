@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px){
+  .card-gales{
+    margin-top: -41px;
+    height: 632px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .card-gales{
+    margin-top: -13px;
+    height: 100%;
+  }
+}

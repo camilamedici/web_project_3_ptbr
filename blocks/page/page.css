@@ -1,12 +1,19 @@
-.page {
-  min-width: 1280px;
-  /* we don't know how to make mobile versions of websites yet, */
-  /* so here we've set a minimum page width */
-  max-width: 1600px;
-  /* here we've set a maximum page width */
+.page{
+  width: 1280px;
   margin: 0 auto;
-  /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Inter', Arial, sans-serif;
-
   background-color: #2A2C2F;
+  color: white;
+}
+
+@media screen and (max-width: 768px){
+  .page{
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .page{
+    width: 320px;
+  }
 }

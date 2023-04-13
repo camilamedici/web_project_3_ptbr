@@ -1,0 +1,17 @@
+.card__title-gales{
+  width: 484px;
+}
+
+@media screen and (max-width: 768px){
+  .card__title-gales{
+    width: 340px;
+    padding: 21px 0 0;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .card__title-gales{
+    padding: 0;
+    width: 288px;
+  }
+}

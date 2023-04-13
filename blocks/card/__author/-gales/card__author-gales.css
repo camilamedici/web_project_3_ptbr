@@ -1,0 +1,10 @@
+.card__author-gales{
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 768px){
+  .card__author-gales{
+    padding-bottom: 0;
+  }
+
+}

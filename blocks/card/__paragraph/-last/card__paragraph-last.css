@@ -1,0 +1,15 @@
+.card__paragraph-last{
+  padding: 0;
+}
+
+@media screen and (max-width: 768px){
+  .card__paragraph-last{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .card__paragraph-last{
+    padding-bottom: 22px;
+  }
+}

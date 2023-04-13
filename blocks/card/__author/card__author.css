@@ -1,0 +1,24 @@
+.card__author{
+  width: 484px;
+  padding-bottom: 48px;
+  line-height: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px){
+  .card__author{
+    width: 365px;
+    padding-bottom: 46px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .card__author{
+    width: 288px;
+    order: 3;
+    padding-bottom: 0;
+  }
+}

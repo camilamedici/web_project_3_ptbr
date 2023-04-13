@@ -1,0 +1,9 @@
+.card__artist-eua{
+  padding-top: 31px;
+}
+
+@media screen and (max-width: 768px){
+  .card__artist-eua{
+    padding-top: 0;
+  }
+}

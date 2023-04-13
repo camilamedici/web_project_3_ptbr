@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px){
+  .button-brazil{
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .button-brazil{
+    margin-bottom: 0;
+  }
+}

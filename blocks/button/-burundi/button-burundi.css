@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px){
+  .button-burundi{
+    margin-bottom: 180px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .button-burundi{
+    margin-bottom: 0;
+  }
+}

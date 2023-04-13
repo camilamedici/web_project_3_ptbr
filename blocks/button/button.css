@@ -1,0 +1,38 @@
+.button{
+  background-color: #0278FE;
+  padding: 13px 20px;
+  border-radius: 4px;
+  gap: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  border: none;
+  width: 355px;
+  height: 48px;
+}
+
+.button:hover{
+  cursor: pointer;
+  background-color: #0063D2;
+}
+
+@media screen and (max-width: 768px){
+  .button{
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .button{
+    width: 288px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 16px 22px 15px 21px;
+    order: 6;
+    margin: 0;
+  }
+}

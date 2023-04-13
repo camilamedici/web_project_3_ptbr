@@ -1,0 +1,28 @@
+.header__title{
+  width: 850px;
+  padding-top: 90px;
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 6rem;
+  line-height: 6.25rem;
+}
+
+@media screen and (max-width: 768px){
+  .header__title{
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .header__title{
+    width: 288px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    padding-top: 50.15px;
+  }
+}
