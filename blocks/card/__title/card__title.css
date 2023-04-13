@@ -11,8 +11,8 @@
 @media screen and (max-width: 768px){
   .card__title{
     width: 340px;
-    font-size: 42px;
-    line-height: 46px;
+    font-size: 2.625rem;
+    line-height: 2.875rem;
   }
 }
 
@@ -21,8 +21,8 @@
     width: 288px;
     font-style: normal;
     font-weight: 900;
-    font-size: 32px;
-    line-height: 35px;
+    font-size: 2rem;
+    line-height: 2.1875rem;
     order: 1;
     padding-bottom: 30px;
   }

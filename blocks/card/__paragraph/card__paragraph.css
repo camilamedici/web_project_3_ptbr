@@ -11,8 +11,8 @@
 @media screen and (max-width: 768px){
   .card__paragraph{
     width: 352px;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 1rem;
+    line-height: 1.625rem;
     padding-bottom: 14px;
   }
 }
